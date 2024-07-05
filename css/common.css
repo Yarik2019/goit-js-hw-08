@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task li {
+  width: 50px;
+  cursor: pointer;
+}
+
+.task a:hover {
+  color: aqua;
+}
+
+/* task-1 */
+
+.categories {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+}
+
+.categories-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.categories-list li {
+  font-weight: 400;
+  color: #2e2f42;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+/* task-2 */
+
+.gallery {
+  max-width: 1128px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  gap: 16px;
+  row-gap: 48px;
+  list-style: none;
+}
+
+.gallery-item {
+  width: calc((100% - 32px) / 3);
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+/* task-3 */
+
+.input {
+  width: 360px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.input::placeholder {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* task-4 */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  gap: 8px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.login-form input:hover {
+  border: 1px solid #000;
+}
+
+.login-form input:active {
+  border: 1px solid #808080;
+}
+
+.button-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  margin-top: 8px;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.button-form:hover {
+  background: #6c8cff;
+}
+
+/* task-5 */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.widget p {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.widget button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+  cursor: pointer;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.widget button:hover {
+  background: #6c8cff;
+}
+
+/* task-6 */
+
+.controls {
+  display: flex;
+  gap: 16px;
+  background-color: #f6f6fe;
+  padding: 32px;
+  width: 486px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  background-color: #f6f6fe;
+  padding: 32px;
+  border-radius: 8px;
+  width: 486px;
+}
+
+.controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 150px;
+  text-align: center;
+}
+
+.controls input[type="number"]::-webkit-inner-spin-button,
+.controls input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.controls input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.create:hover {
+  background: #6c8cff;
+}
+
+.destroy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.destroy:hover {
+  background: #ff7070;
+}
